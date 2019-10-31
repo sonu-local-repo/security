@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-gateway-service (2)" />
+        <module name="gateway-service" />
+      </profile>
+      <profile name="Annotation profile for gateway-parent" enabled="true">
+        <sourceOutputDir name="../SpringCloudGateway/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../SpringCloudGateway/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-gateway-service (1)" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="gateway-service" target="11" />
+      <module name="spring-gateway-parent" target="1.5" />
+      <module name="spring-gateway-service (1)" target="11" />
+      <module name="spring-gateway-service (2)" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="gateway-service" options="-parameters" />
+      <module name="spring-gateway-service (1)" options="-parameters" />
+    </option>
+  </component>
+</project>

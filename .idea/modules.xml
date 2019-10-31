@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/gateway-service/gateway-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-gateway-parent.iml" filepath="$PROJECT_DIR$/spring-gateway-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloudGateway-User/spring-gateway-service (1).iml" filepath="$PROJECT_DIR$/SpringCloudGateway-User/spring-gateway-service (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloudGateway/spring-gateway-service (2).iml" filepath="$PROJECT_DIR$/SpringCloudGateway/spring-gateway-service (2).iml" />
+    </modules>
+  </component>
+</project>
