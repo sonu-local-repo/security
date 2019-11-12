@@ -1,4 +1,4 @@
-package com.learnjava.springgatewayservice.resource;
+package com.learnjava.springcloudcustomer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -7,20 +7,18 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/customer")
 public class GetMessage {
 
     @Autowired
     RestTemplate restTemplate;
+
     @GetMapping("/message")
     public String getMessage(){
-        return "Message from User Service Get Message";
+        return "Message from Customer Service Get Message";
     }
-
-    @GetMapping("/customer/message")
-    public String getCustomer() {
-        String outPut = restTemplate.getForObject("http://customer-service/customer/message", String.class);
-        return outPut.concat("\n*****from User Service******************");
+    @GetMapping("/user/message")
+    public String getUsers(){
+        return restTemplate.getForObject("http://USER-SERVICE/user/message", String.class);
     }
 }
-
